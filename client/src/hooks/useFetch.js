@@ -17,6 +17,7 @@ export const useFetch = (url, method, params) => {
           body: JSON.stringify(params),
         });
 
+        // fix later
         const json = await response.json();
 
         setData(json);

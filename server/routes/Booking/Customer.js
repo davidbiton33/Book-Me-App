@@ -6,6 +6,7 @@ const router = require("express").Router();
 
 // Get customer by email
 router.post("/", async (req, res) => {
+  // work
   const { given_name, family_name, email, phoneNumber } = req.body;
 
   if (!email) {
